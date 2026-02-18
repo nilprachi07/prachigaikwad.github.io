@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prachi Gaikwad — Frontend Developer</title>
+  <meta name="description" content="Frontend Developer with 3.6 years of experience building responsive web apps, REST API integrations, and automation systems." />
+
+  <!--
+    Fonts:
+    - Plus Jakarta Sans  → body / UI (modern, professional, humanist)
+    - DM Serif Display   → headings (editorial authority, not over-designed)
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─────────────────────────────────────────────
+       NAVBAR
+  ───────────────────────────────────────────── -->
+  <header class="site-header" id="siteHeader" role="banner">
+    <nav class="nav-wrap" aria-label="Primary navigation">
+      <div class="nav-inner">
+
+        <!-- Brand -->
+        <a href="#home" class="brand" aria-label="Prachi Gaikwad — Home">
+          <span class="brand-initials">PG</span>
+          <span class="brand-name">Prachi Gaikwad</span>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-list" id="navList" role="list">
+          <li><a href="#about"    class="nav-item">About</a></li>
+          <li><a href="#skills"   class="nav-item">Skills</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#tracker"  class="nav-item">Tracker</a></li>
+          <li><a href="#contact"  class="nav-item">Contact</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <a href="Protfolio\resume.pdf" class="btn btn--sm btn--outline" download aria-label="Download resume PDF">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            Resume
+          </a>
+
+          <!-- Hamburger -->
+          <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navList">
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+            <span class="toggle-bar"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ─────────────────────────────────────────────
+         HERO
+    ───────────────────────────────────────────── -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+
+      <!-- Subtle grid background -->
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <!-- Status pill -->
+        <div class="hero-status fade-up" aria-label="Currently open to work">
+          <span class="status-dot" aria-hidden="true"></span>
+          Available for opportunities
+        </div>
+
+        <!-- Primary heading -->
+        <h1 class="hero-heading fade-up delay-1" id="hero-heading">
+          Frontend Developer<br/>
+          <em class="hero-heading-em">crafting interfaces that ship.</em>
+        </h1>
+
+        <!-- Sub-copy -->
+        <p class="hero-sub fade-up delay-2">
+          Prachi Gaikwad — 3.6 years building responsive web applications,
+          REST API integrations, and automation systems that reduce manual effort by
+          measurable margins.
+        </p>
+
+        <!-- CTAs -->
+        <div class="hero-cta fade-up delay-3">
+          <a href="#projects" class="btn btn--primary btn--lg">
+            View Projects
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn--ghost btn--lg">Get in Touch</a>
+        </div>
+
+        <!-- Key metrics -->
+        <dl class="hero-metrics fade-up delay-4">
+          <div class="metric-item">
+            <dt class="metric-label">Experience</dt>
+            <dd class="metric-val" data-count="3.6" data-decimals="1">3.6<span class="metric-unit"> yrs</span></dd>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <dt class="metric-label">Projects Shipped</dt>
+            <dd class="metric-val" data-count="12" data-suffix="+">12+</dd>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <dt class="metric-label">APIs Integrated</dt>
+            <dd class="metric-val" data-count="20" data-suffix="+">20+</dd>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <dt class="metric-label">Automation Pipelines</dt>
+            <dd class="metric-val" data-count="8" data-suffix="+">8+</dd>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a class="scroll-down" href="#about" aria-label="Scroll to About section">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+        <span>Scroll</span>
+      </a>
+
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         ABOUT
+    ───────────────────────────────────────────── -->
+    <section class="section section--alt" id="about" aria-labelledby="about-heading">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">About Me</p>
+          <h2 class="section-title" id="about-heading">Building web products<br/>people actually use.</h2>
+        </header>
+
+        <div class="about-layout">
+
+          <!-- Bio column -->
+          <div class="about-bio reveal">
+            <p class="about-lead">
+              I'm a Frontend Developer with <strong>3.6 years of professional experience</strong> delivering
+              responsive web applications, CMS-integrated platforms, and intelligent automation tools.
+            </p>
+            <p class="about-body">
+              My work spans the full frontend lifecycle — translating Figma specs into pixel-perfect
+              interfaces, integrating third-party REST APIs, and writing Google Apps Script automations
+              that have saved teams dozens of hours per month.
+            </p>
+            <p class="about-body">
+              I take ownership of performance. Whether that means reducing page load time, eliminating
+              redundant API calls, or refactoring legacy CSS into maintainable design tokens — I care
+              about code quality as much as visual quality.
+            </p>
+
+            <div class="about-meta">
+              <div class="meta-item">
+                <span class="meta-label">Role</span>
+                <span class="meta-val">Frontend Developer &amp; Automation Specialist</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Stack</span>
+                <span class="meta-val">JavaScript · HTML5 · CSS3 · REST APIs · Google Apps Script</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Location</span>
+                <span class="meta-val">India — open to remote &amp; hybrid</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Impact column -->
+          <div class="about-impact reveal">
+            <h3 class="impact-heading">Measurable Impact</h3>
+
+            <ul class="impact-list" role="list">
+              <li class="impact-item">
+                <span class="impact-number">40%</span>
+                <div class="impact-desc">
+                  <strong>Faster page load</strong>
+                  <p>Optimised asset delivery and lazy-loading strategy on an e-commerce CMS site,
+                     reducing LCP from 4.2 s to 2.5 s.</p>
+                </div>
+              </li>
+              <li class="impact-item">
+                <span class="impact-number">20+</span>
+                <div class="impact-desc">
+                  <strong>REST APIs integrated</strong>
+                  <p>Payment gateways, shipping providers, CRM webhooks and reporting endpoints
+                     across multiple production systems.</p>
+                </div>
+              </li>
+              <li class="impact-item">
+                <span class="impact-number">60 hrs</span>
+                <div class="impact-desc">
+                  <strong>Saved per month via automation</strong>
+                  <p>Google Sheets + Apps Script pipelines replaced manual data aggregation and
+                     email reporting for a 12-person ops team.</p>
+                </div>
+              </li>
+              <li class="impact-item">
+                <span class="impact-number">3</span>
+                <div class="impact-desc">
+                  <strong>Production CMS platforms delivered</strong>
+                  <p>End-to-end ownership of Wix Velo and WordPress deployments with custom
+                     business logic and payment flows.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         SKILLS
+    ───────────────────────────────────────────── -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Skills</p>
+          <h2 class="section-title" id="skills-heading">Technical Proficiency</h2>
+        </header>
+
+        <div class="skills-grid">
+
+          <!-- Frontend -->
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+              <h3 class="skill-card-title">Frontend Development</h3>
+            </div>
+            <ul class="skill-list" aria-label="Frontend skills">
+              <li class="skill-row">
+                <span class="skill-name">HTML5 &amp; Semantic Markup</span>
+                <span class="skill-pct">95%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 — 95%">
+                  <div class="skill-fill" data-width="95"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">CSS3, Flexbox &amp; Grid</span>
+                <span class="skill-pct">88%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 — 88%">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">JavaScript ES6+</span>
+                <span class="skill-pct">82%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript — 82%">
+                  <div class="skill-fill" data-width="82"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Responsive / Mobile-first Design</span>
+                <span class="skill-pct">90%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive — 90%">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- APIs -->
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+              </svg>
+              <h3 class="skill-card-title">API &amp; Backend Integration</h3>
+            </div>
+            <ul class="skill-list" aria-label="API integration skills">
+              <li class="skill-row">
+                <span class="skill-name">REST API Integration</span>
+                <span class="skill-pct">85%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="REST APIs — 85%">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Fetch API / Async–Await</span>
+                <span class="skill-pct">83%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Fetch API — 83%">
+                  <div class="skill-fill" data-width="83"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">CRUD &amp; JSON Handling</span>
+                <span class="skill-pct">87%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="JSON — 87%">
+                  <div class="skill-fill" data-width="87"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Razorpay / Payment APIs</span>
+                <span class="skill-pct">78%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Razorpay — 78%">
+                  <div class="skill-fill" data-width="78"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Automation -->
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+              </svg>
+              <h3 class="skill-card-title">Automation &amp; Tooling</h3>
+            </div>
+            <ul class="skill-list" aria-label="Automation skills">
+              <li class="skill-row">
+                <span class="skill-name">Google Apps Script</span>
+                <span class="skill-pct">88%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Apps Script — 88%">
+                  <div class="skill-fill" data-width="88"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Google Sheets Integration</span>
+                <span class="skill-pct">90%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Sheets — 90%">
+                  <div class="skill-fill" data-width="90"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Email / Report Automation</span>
+                <span class="skill-pct">82%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Email Automation — 82%">
+                  <div class="skill-fill" data-width="82"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Excel Automation</span>
+                <span class="skill-pct">74%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" aria-label="Excel — 74%">
+                  <div class="skill-fill" data-width="74"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Platforms -->
+          <div class="skill-card reveal">
+            <div class="skill-card-head">
+              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <h3 class="skill-card-title">Platforms &amp; Tools</h3>
+            </div>
+            <div class="tools-grid" aria-label="Tools and platforms">
+              <span class="tool-chip">Wix Velo</span>
+              <span class="tool-chip">WordPress</span>
+              <span class="tool-chip">AWS EC2</span>
+              <span class="tool-chip">Git / GitHub</span>
+              <span class="tool-chip">VS Code</span>
+              <span class="tool-chip">Razorpay</span>
+              <span class="tool-chip">Postman</span>
+              <span class="tool-chip">Figma (reading)</span>
+              <span class="tool-chip">LocalStorage API</span>
+              <span class="tool-chip">DOM APIs</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         PROJECTS
+    ───────────────────────────────────────────── -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Projects</p>
+          <h2 class="section-title" id="projects-heading">Selected Work</h2>
+          <p class="section-sub">Production-grade projects covering e-commerce, automation, API integration, and tooling.</p>
+        </header>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 — E-Commerce CMS -->
+          <article class="project-card reveal" aria-labelledby="proj1-title">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-index">01</span>
+                <span class="project-category">E-Commerce</span>
+              </div>
+
+              <h3 class="project-title" id="proj1-title">E-Commerce CMS Platform</h3>
+              <p class="project-desc">
+                Full-featured online store built on Wix Velo with dynamic product listings pulled from a
+                headless CMS, a custom cart implementation, and a live Razorpay checkout flow.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-tag">40% faster LCP</span>
+                <span class="impact-tag">Razorpay live checkout</span>
+                <span class="impact-tag">Mobile-first</span>
+              </div>
+
+              <ul class="project-highlights" aria-label="Key features">
+                <li>Dynamic product catalogue synced from CMS data layer</li>
+                <li>Custom JavaScript cart with quantity &amp; discount logic</li>
+                <li>Razorpay payment gateway — sandbox to production</li>
+                <li>SEO-optimised markup with structured data</li>
+              </ul>
+
+              <div class="project-stack" aria-label="Technology stack">
+                <span class="stack-badge">Wix Velo</span>
+                <span class="stack-badge">JavaScript</span>
+                <span class="stack-badge">CSS3</span>
+                <span class="stack-badge">Razorpay API</span>
+                <span class="stack-badge">REST API</span>
+              </div>
+            </div>
+
+            <!-- Hover overlay with links -->
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="overlay-btn overlay-btn--primary"
+                 onclick="return false;" aria-label="View live demo of E-Commerce CMS Platform">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="overlay-btn overlay-btn--secondary"
+                 onclick="return false;" aria-label="View source code of E-Commerce CMS Platform">
+                View Code
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 — Automation Dashboard -->
+          <article class="project-card reveal" aria-labelledby="proj2-title">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-index">02</span>
+                <span class="project-category">Automation</span>
+              </div>
+
+              <h3 class="project-title" id="proj2-title">Reporting Automation Dashboard</h3>
+              <p class="project-desc">
+                Internal dashboard that aggregates live Google Sheets data, generates visual
+                reports on schedule, and dispatches formatted emails with PDF attachments —
+                replacing a manual 5-hour weekly process.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-tag">60 hrs / mo saved</span>
+                <span class="impact-tag">Zero manual steps</span>
+                <span class="impact-tag">12-person team</span>
+              </div>
+
+              <ul class="project-highlights" aria-label="Key features">
+                <li>Real-time Sheets data aggregation via Apps Script API</li>
+                <li>Automated weekly email dispatch with attachment</li>
+                <li>Dynamic chart rendering from JSON data</li>
+                <li>Role-based filter controls for department views</li>
+              </ul>
+
+              <div class="project-stack" aria-label="Technology stack">
+                <span class="stack-badge">Google Apps Script</span>
+                <span class="stack-badge">Sheets API</span>
+                <span class="stack-badge">JavaScript</span>
+                <span class="stack-badge">HTML5</span>
+                <span class="stack-badge">CSS3</span>
+              </div>
+            </div>
+
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="overlay-btn overlay-btn--primary"
+                 onclick="return false;" aria-label="View live demo of Automation Dashboard">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="overlay-btn overlay-btn--secondary"
+                 onclick="return false;" aria-label="View source code of Automation Dashboard">
+                View Code
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 — API Web App -->
+          <article class="project-card reveal" aria-labelledby="proj3-title">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-index">03</span>
+                <span class="project-category">API Integration</span>
+              </div>
+
+              <h3 class="project-title" id="proj3-title">API-Driven Web Application</h3>
+              <p class="project-desc">
+                Single-page application that consumes multiple REST endpoints using the
+                Fetch API with async error handling, skeleton loading states, and dynamic
+                DOM rendering — zero framework dependencies.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-tag">0 dependencies</span>
+                <span class="impact-tag">Sub-1s TTFB</span>
+                <span class="impact-tag">Full error handling</span>
+              </div>
+
+              <ul class="project-highlights" aria-label="Key features">
+                <li>Fetch API with async/await &amp; graceful error boundaries</li>
+                <li>Skeleton loaders for perceived performance</li>
+                <li>Client-side search and filter with debounce</li>
+                <li>LocalStorage caching to reduce redundant requests</li>
+              </ul>
+
+              <div class="project-stack" aria-label="Technology stack">
+                <span class="stack-badge">Vanilla JS</span>
+                <span class="stack-badge">Fetch API</span>
+                <span class="stack-badge">REST API</span>
+                <span class="stack-badge">HTML5</span>
+                <span class="stack-badge">CSS3</span>
+              </div>
+            </div>
+
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="overlay-btn overlay-btn--primary"
+                 onclick="return false;" aria-label="View live demo of API Web App">
+                Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="#" class="overlay-btn overlay-btn--secondary"
+                 onclick="return false;" aria-label="View source code of API Web App">
+                View Code
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 — Interview Tracker -->
+          <article class="project-card project-card--featured reveal" aria-labelledby="proj4-title">
+            <div class="project-card-body">
+              <div class="project-meta">
+                <span class="project-index">04</span>
+                <span class="project-category">Productivity Tool</span>
+              </div>
+
+              <h3 class="project-title" id="proj4-title">Interview Tracker — Live Demo Below</h3>
+              <p class="project-desc">
+                A client-side application for tracking job applications across companies and
+                statuses. Data is persisted via the browser's LocalStorage API — no server required.
+                The live implementation is embedded in the next section.
+              </p>
+
+              <div class="project-impact">
+                <span class="impact-tag">Zero backend</span>
+                <span class="impact-tag">LocalStorage CRUD</span>
+                <span class="impact-tag">Fully interactive</span>
+              </div>
+
+              <ul class="project-highlights" aria-label="Key features">
+                <li>Add, filter, and delete application entries</li>
+                <li>Status tracking: Applied, Interviewed, Rejected, Accepted</li>
+                <li>Persistent storage via LocalStorage API</li>
+                <li>Keyboard-accessible &amp; screen-reader friendly</li>
+              </ul>
+
+              <div class="project-stack" aria-label="Technology stack">
+                <span class="stack-badge">Vanilla JS</span>
+                <span class="stack-badge">LocalStorage</span>
+                <span class="stack-badge">HTML5</span>
+                <span class="stack-badge">CSS3</span>
+              </div>
+            </div>
+
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#tracker" class="overlay-btn overlay-btn--primary"
+                 aria-label="Try the live Interview Tracker demo">
+                Try Live Demo
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         INTERVIEW TRACKER (LIVE DEMO)
+    ───────────────────────────────────────────── -->
+    <section class="section" id="tracker" aria-labelledby="tracker-heading">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Live Demo</p>
+          <h2 class="section-title" id="tracker-heading">Interview Tracker</h2>
+          <p class="section-sub">
+            Add your job applications below. Data is stored locally in your browser — nothing is sent to any server.
+          </p>
+        </header>
+
+        <div class="tracker-layout">
+
+          <!-- Add form -->
+          <div class="tracker-form-panel reveal">
+            <h3 class="panel-title">New Application</h3>
+
+            <form id="trackerForm" class="tracker-form" novalidate autocomplete="off" aria-label="Add a new job application">
+
+              <div class="form-field">
+                <label class="form-label" for="tCompany">
+                  Company Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="tCompany"
+                  name="company"
+                  placeholder="e.g. Infosys, Razorpay"
+                  aria-required="true"
+                  aria-describedby="tCompany-err"
+                />
+                <span class="form-error" id="tCompany-err" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="tRole">Job Role</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="tRole"
+                  name="role"
+                  placeholder="e.g. Frontend Developer"
+                />
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="tStatus">Status <span class="required" aria-hidden="true">*</span></label>
+                <div class="select-wrap">
+                  <select class="form-select" id="tStatus" name="status" aria-required="true">
+                    <option value="Applied">Applied</option>
+                    <option value="Interviewed">Interviewed</option>
+                    <option value="Rejected">Rejected</option>
+                    <option value="Accepted">Accepted</option>
+                  </select>
+                  <svg class="select-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <polyline points="6 9 12 15 18 9"/>
+                  </svg>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--block" id="tAddBtn">
+                Add Application
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+          <!-- Results panel -->
+          <div class="tracker-results-panel reveal">
+
+            <!-- Filter bar -->
+            <div class="tracker-filter-bar" role="tablist" aria-label="Filter applications by status">
+              <button class="filter-tab active" data-filter="All"        role="tab" aria-selected="true"  aria-controls="trackerList">All</button>
+              <button class="filter-tab"        data-filter="Applied"    role="tab" aria-selected="false" aria-controls="trackerList">Applied</button>
+              <button class="filter-tab"        data-filter="Interviewed"role="tab" aria-selected="false" aria-controls="trackerList">Interviewed</button>
+              <button class="filter-tab"        data-filter="Rejected"   role="tab" aria-selected="false" aria-controls="trackerList">Rejected</button>
+              <button class="filter-tab"        data-filter="Accepted"   role="tab" aria-selected="false" aria-controls="trackerList">Accepted</button>
+            </div>
+
+            <!-- Summary counts -->
+            <div class="tracker-summary" id="trackerSummary" aria-live="polite" aria-label="Application summary"></div>
+
+            <!-- List -->
+            <div class="tracker-list" id="trackerList" role="list" aria-label="Job applications" aria-live="polite">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- Empty state -->
+            <div class="tracker-empty" id="trackerEmpty">
+              <svg class="empty-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+                <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+                <rect x="9" y="3" width="6" height="4" rx="1"/>
+              </svg>
+              <p class="empty-title">No applications yet</p>
+              <p class="empty-sub">Use the form to track your first job application.</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────────────────────────────────────
+         CONTACT
+    ───────────────────────────────────────────── -->
+    <section class="section section--alt" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Contact</p>
+          <h2 class="section-title" id="contact-heading">Let's work together.</h2>
+          <p class="section-sub">Open to full-time roles, contract work, and consulting. Response time within 24 hours.</p>
+        </header>
+
+        <div class="contact-layout">
+
+          <!-- Info column -->
+          <div class="contact-info reveal">
+            <p class="contact-intro">
+              I'm actively exploring new opportunities. Whether you have a specific role,
+              a project in mind, or just want to discuss ideas — I'd be happy to talk.
+            </p>
+
+            <nav class="contact-links" aria-label="Contact channels">
+              <a href="mailto:prachi.gaikwad@email.com" class="contact-link">
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-val">prachi.gaikwad@email.com</span>
+                <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://linkedin.com/in/prachi-gaikwad" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-val">linkedin.com/in/prachi-gaikwad</span>
+                <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="https://github.com/prachigaikwad" target="_blank" rel="noopener noreferrer" class="contact-link">
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-val">github.com/prachigaikwad</span>
+                <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </nav>
+
+            <a href="resume.pdf" class="btn btn--outline btn--resume" download>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Download Resume
+            </a>
+          </div>
+
+          <!-- Contact form -->
+          <form class="contact-form reveal" id="contactForm" novalidate aria-label="Send Prachi a message">
+
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="cfName">
+                  Full Name <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="cfName"
+                  name="name"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  aria-required="true"
+                  aria-describedby="cfName-err"
+                />
+                <span class="form-error" id="cfName-err" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="cfEmail">
+                  Email Address <span class="required" aria-hidden="true">*</span>
+                </label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="cfEmail"
+                  name="email"
+                  placeholder="you@company.com"
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="cfEmail-err"
+                />
+                <span class="form-error" id="cfEmail-err" role="alert" aria-live="polite"></span>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="cfSubject">
+                Subject <span class="required" aria-hidden="true">*</span>
+              </label>
+              <input
+                class="form-input"
+                type="text"
+                id="cfSubject"
+                name="subject"
+                placeholder="e.g. Frontend role at Acme Corp"
+                aria-required="true"
+                aria-describedby="cfSubject-err"
+              />
+              <span class="form-error" id="cfSubject-err" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="cfMessage">
+                Message <span class="required" aria-hidden="true">*</span>
+              </label>
+              <textarea
+                class="form-input form-textarea"
+                id="cfMessage"
+                name="message"
+                rows="5"
+                placeholder="Tell me about the role or project…"
+                aria-required="true"
+                aria-describedby="cfMessage-err"
+              ></textarea>
+              <span class="form-error" id="cfMessage-err" role="alert" aria-live="polite"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--block" id="cfSubmit">
+              <span id="cfBtnLabel">Send Message</span>
+              <svg id="cfBtnIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+              </svg>
+            </button>
+
+            <div class="form-success" id="cfSuccess" role="alert" aria-live="polite" hidden>
+              Message received — I'll reply within 24 hours. Thank you.
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─────────────────────────────────────────────
+       FOOTER
+  ───────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-initials">PG</span>
+          <div class="footer-brand-text">
+            <p class="footer-name">Prachi Gaikwad</p>
+            <p class="footer-title-text">Frontend Developer — India</p>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="footer-right">
+          <p class="footer-copy">
+            &copy; <span id="footerYear"></span> Prachi Gaikwad
+          </p>
+          <a href="#home" class="back-to-top" aria-label="Scroll back to top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M12 19V5M5 12l7-7 7 7"/>
+            </svg>
+            Top
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
