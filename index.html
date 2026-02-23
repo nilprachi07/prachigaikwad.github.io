@@ -3,45 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prachi Gaikwad — Frontend Developer</title>
-  <meta name="description" content="Frontend Developer with 3.6 years of experience building responsive web apps, REST API integrations, and automation systems." />
-
-  <!--
-    Fonts:
-    - Plus Jakarta Sans  → body / UI (modern, professional, humanist)
-    - DM Serif Display   → headings (editorial authority, not over-designed)
-  -->
+  <title>Prachi Gaikwad — Automation Developer &amp; Frontend Engineer</title>
+  <meta name="description" content="Automation Developer specialising in Google Apps Script, REST APIs, and workflow automation. Architected 10+ solutions reducing manual work by up to 85%." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ─────────────────────────────────────────────
-       NAVBAR
-  ───────────────────────────────────────────── -->
   <header class="site-header" id="siteHeader" role="banner">
     <nav class="nav-wrap" aria-label="Primary navigation">
       <div class="nav-inner">
 
-        <!-- Brand -->
         <a href="#home" class="brand" aria-label="Prachi Gaikwad — Home">
           <span class="brand-initials">PG</span>
           <span class="brand-name">Prachi Gaikwad</span>
         </a>
 
-        <!-- Desktop links -->
         <ul class="nav-list" id="navList" role="list">
-          <li><a href="#about"    class="nav-item">About</a></li>
-          <li><a href="#skills"   class="nav-item">Skills</a></li>
-          <li><a href="#projects" class="nav-item">Projects</a></li>
-          <li><a href="#tracker"  class="nav-item">Tracker</a></li>
-          <li><a href="#contact"  class="nav-item">Contact</a></li>
+          <li><a href="#about"      class="nav-item">About</a></li>
+          <li><a href="#experience" class="nav-item">Experience</a></li>
+          <li><a href="#skills"     class="nav-item">Skills</a></li>
+          <li><a href="#projects"   class="nav-item">Projects</a></li>
+          <li><a href="#tracker"    class="nav-item">Tracker</a></li>
+          <li><a href="#contact"    class="nav-item">Contact</a></li>
         </ul>
 
-        <!-- Actions -->
         <div class="nav-actions">
           <a href="resume.pdf" class="btn btn--sm btn--outline" download aria-label="Download resume PDF">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -51,8 +39,6 @@
             </svg>
             Resume
           </a>
-
-          <!-- Hamburger -->
           <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navList">
             <span class="toggle-bar"></span>
             <span class="toggle-bar"></span>
@@ -66,38 +52,29 @@
 
   <main id="main-content">
 
-    <!-- ─────────────────────────────────────────────
-         HERO
-    ───────────────────────────────────────────── -->
+    <!-- ── HERO ── -->
     <section class="hero" id="home" aria-labelledby="hero-heading">
-
-      <!-- Subtle grid background -->
       <div class="hero-grid-bg" aria-hidden="true"></div>
-
       <div class="hero-inner">
-        <!-- Status pill -->
+
         <div class="hero-status fade-up" aria-label="Currently open to work">
           <span class="status-dot" aria-hidden="true"></span>
           Available for opportunities
         </div>
 
-        <!-- Primary heading -->
         <h1 class="hero-heading fade-up delay-1" id="hero-heading">
-          Frontend Developer<br/>
-          <em class="hero-heading-em">crafting interfaces that ship.</em>
+          Automation Developer<br />&amp; Frontend Engineer
+          <em class="hero-heading-em">architecting workflows that scale.</em>
         </h1>
 
-        <!-- Sub-copy -->
         <p class="hero-sub fade-up delay-2">
-          Prachi Gaikwad — 3.6 years building responsive web applications,
-          REST API integrations, and automation systems that reduce manual effort by
-          measurable margins.
+          I architect automation systems that reduce manual effort by up to 85% using Google
+          Workspace, REST APIs, workflow triggers, and custom web applications.
         </p>
 
-        <!-- CTAs -->
         <div class="hero-cta fade-up delay-3">
-          <a href="#projects" class="btn btn--primary btn--lg">
-            View Projects
+          <a href="#experience" class="btn btn--primary btn--lg">
+            View Experience
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
@@ -105,7 +82,6 @@
           <a href="#contact" class="btn btn--ghost btn--lg">Get in Touch</a>
         </div>
 
-        <!-- Key metrics -->
         <dl class="hero-metrics fade-up delay-4">
           <div class="metric-item">
             <dt class="metric-label">Experience</dt>
@@ -113,128 +89,252 @@
           </div>
           <div class="metric-divider" aria-hidden="true"></div>
           <div class="metric-item">
-            <dt class="metric-label">Projects Shipped</dt>
-            <dd class="metric-val" data-count="12" data-suffix="+">12+</dd>
+            <dt class="metric-label">Automations Built</dt>
+            <dd class="metric-val" data-count="10" data-suffix="+">10+</dd>
+          </div>
+          <div class="metric-divider" aria-hidden="true"></div>
+          <div class="metric-item">
+            <dt class="metric-label">Manual Work Reduced</dt>
+            <dd class="metric-val" data-count="85" data-suffix="%">85%</dd>
           </div>
           <div class="metric-divider" aria-hidden="true"></div>
           <div class="metric-item">
             <dt class="metric-label">APIs Integrated</dt>
             <dd class="metric-val" data-count="20" data-suffix="+">20+</dd>
           </div>
-          <div class="metric-divider" aria-hidden="true"></div>
-          <div class="metric-item">
-            <dt class="metric-label">Automation Pipelines</dt>
-            <dd class="metric-val" data-count="8" data-suffix="+">8+</dd>
-          </div>
         </dl>
       </div>
 
-      <!-- Scroll indicator -->
       <a class="scroll-down" href="#about" aria-label="Scroll to About section">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
           <path d="M12 5v14M5 12l7 7 7-7"/>
         </svg>
         <span>Scroll</span>
       </a>
-
     </section>
 
-    <!-- ─────────────────────────────────────────────
-         ABOUT
-    ───────────────────────────────────────────── -->
+    <!-- ── ABOUT ── -->
     <section class="section section--alt" id="about" aria-labelledby="about-heading">
       <div class="container">
-
         <header class="section-header reveal">
           <p class="section-eyebrow">About Me</p>
-          <h2 class="section-title" id="about-heading">Building web products<br/>people actually use.</h2>
+          <h2 class="section-title" id="about-heading">Building systems<br />that actually ship.</h2>
         </header>
 
         <div class="about-layout">
-
-          <!-- Bio column -->
           <div class="about-bio reveal">
             <p class="about-lead">
-              I'm a Frontend Developer with <strong>3.6 years of professional experience</strong> delivering
-              responsive web applications, CMS-integrated platforms, and intelligent automation tools.
+              I'm an <strong>Automation Developer &amp; Frontend Engineer</strong> with 3.6 years
+              of professional experience turning complex manual processes into reliable, scalable automation.
             </p>
             <p class="about-body">
-              My work spans the full frontend lifecycle — translating Figma specs into pixel-perfect
-              interfaces, integrating third-party REST APIs, and writing Google Apps Script automations
-              that have saved teams dozens of hours per month.
+              My primary focus is Google Apps Script, REST API integrations, and trigger-driven
+              architecture — building systems that handle hundreds of operations daily with zero manual
+              intervention. I've reduced reporting cycles from hours to seconds and consolidated messy
+              multi-sheet data landscapes into single sources of truth.
             </p>
             <p class="about-body">
-              I take ownership of performance. Whether that means reducing page load time, eliminating
-              redundant API calls, or refactoring legacy CSS into maintainable design tokens — I care
-              about code quality as much as visual quality.
+              I also carry strong frontend fundamentals: responsive web apps, payment gateway
+              integrations, performance optimisation, and CMS platforms. I care about code quality,
+              maintainability, and outcomes that are measurable.
             </p>
-
             <div class="about-meta">
               <div class="meta-item">
                 <span class="meta-label">Role</span>
-                <span class="meta-val">Frontend Developer &amp; Automation Specialist</span>
+                <span class="meta-val">Automation Developer &amp; Frontend Engineer</span>
               </div>
               <div class="meta-item">
                 <span class="meta-label">Stack</span>
-                <span class="meta-val">JavaScript · HTML5 · CSS3 · REST APIs · Google Apps Script</span>
+                <span class="meta-val">Google Apps Script · REST APIs · JavaScript · n8n · HTML5 · CSS3</span>
               </div>
               <div class="meta-item">
                 <span class="meta-label">Location</span>
-                <span class="meta-val">India — open to remote &amp; hybrid</span>
+                <span class="meta-val">Mumbai, India — open to remote &amp; hybrid</span>
               </div>
             </div>
           </div>
 
-          <!-- Impact column -->
           <div class="about-impact reveal">
             <h3 class="impact-heading">Measurable Impact</h3>
-
             <ul class="impact-list" role="list">
               <li class="impact-item">
-                <span class="impact-number">40%</span>
+                <span class="impact-number">85%</span>
                 <div class="impact-desc">
-                  <strong>Faster page load</strong>
-                  <p>Optimised asset delivery and lazy-loading strategy on an e-commerce CMS site,
-                     reducing LCP from 4.2 s to 2.5 s.</p>
+                  <strong>Reduction in manual data entry</strong>
+                  <p>10+ automated workflows at Triologic — accuracy improved from 78% to 99%.</p>
                 </div>
               </li>
               <li class="impact-item">
-                <span class="impact-number">20+</span>
+                <span class="impact-number">100+</span>
                 <div class="impact-desc">
-                  <strong>REST APIs integrated</strong>
-                  <p>Payment gateways, shipping providers, CRM webhooks and reporting endpoints
-                     across multiple production systems.</p>
+                  <strong>Daily ticket requests automated</strong>
+                  <p>Production API integration with Creative Point ticketing system via Gmail API.</p>
                 </div>
               </li>
               <li class="impact-item">
-                <span class="impact-number">60 hrs</span>
+                <span class="impact-number">15 hrs</span>
                 <div class="impact-desc">
-                  <strong>Saved per month via automation</strong>
-                  <p>Google Sheets + Apps Script pipelines replaced manual data aggregation and
-                     email reporting for a 12-person ops team.</p>
+                  <strong>Saved per week via MIS automation</strong>
+                  <p>Trigger-based daily reports and instant alerts eliminating all manual overhead.</p>
                 </div>
               </li>
               <li class="impact-item">
-                <span class="impact-number">3</span>
+                <span class="impact-number">6 → 1</span>
                 <div class="impact-desc">
-                  <strong>Production CMS platforms delivered</strong>
-                  <p>End-to-end ownership of Wix Velo and WordPress deployments with custom
-                     business logic and payment flows.</p>
+                  <strong>Sheets unified into master dashboard</strong>
+                  <p>Crescat Finserv dashboard — 99+ data points, error rate dropped from 12% to 1%.</p>
                 </div>
               </li>
             </ul>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ─────────────────────────────────────────────
-         SKILLS
-    ───────────────────────────────────────────── -->
-    <section class="section" id="skills" aria-labelledby="skills-heading">
+    <!-- ── EXPERIENCE ── -->
+    <section class="section" id="experience" aria-labelledby="experience-heading">
       <div class="container">
+        <header class="section-header reveal">
+          <p class="section-eyebrow">Experience</p>
+          <h2 class="section-title" id="experience-heading">Professional Work</h2>
+          <p class="section-sub">Impact-focused contributions across automation, data systems, and frontend engineering.</p>
+        </header>
 
+        <ol class="experience-list" role="list">
+
+          <!-- Triologic -->
+          <li class="exp-card reveal" aria-labelledby="exp1-role">
+            <div class="exp-header">
+              <div>
+                <p class="exp-role" id="exp1-role">MIS Executive / Google Apps Script Developer</p>
+                <p class="exp-company">Triologic Enterprises Pvt. Ltd. — Mumbai</p>
+              </div>
+              <span class="exp-period">Aug 2025 – Jan 2026</span>
+            </div>
+            <p class="exp-summary">
+              Designed and deployed 10+ automated workflow systems integrating Google Forms, Sheets,
+              and Apps Script. Built a production-grade API integration connecting the Creative Point
+              ticketing platform with Google Sheets — automating 100+ daily requests with real-time
+              Gmail API notifications.
+            </p>
+            <ul class="exp-highlights" aria-label="Key contributions">
+              <li>
+                <span class="exp-highlight-badge exp-highlight-badge--primary">Automation</span>
+                Architected 10+ trigger-based workflows (Forms → Sheets → Gmail API), reducing manual
+                data entry by 85% and improving reporting accuracy from 78% to 99%.
+              </li>
+              <li>
+                <span class="exp-highlight-badge exp-highlight-badge--primary">API Integration</span>
+                Built production REST API integration with Creative Point ticketing system — 100+
+                daily requests processed with zero manual intervention.
+              </li>
+              <li>
+                <span class="exp-highlight-badge">MIS Reporting</span>
+                Trigger-based daily MIS report framework dispatching instant alerts to 10+ stakeholders,
+                saving 15+ hours of manual reporting per week.
+              </li>
+            </ul>
+            <div class="exp-stack">
+              <span class="stack-badge">Google Apps Script</span>
+              <span class="stack-badge">REST API</span>
+              <span class="stack-badge">Gmail API</span>
+              <span class="stack-badge">Google Sheets</span>
+              <span class="stack-badge">Google Forms</span>
+              <span class="stack-badge">Trigger Architecture</span>
+            </div>
+          </li>
+
+          <!-- Crescat Finserv -->
+          <li class="exp-card reveal" aria-labelledby="exp2-role">
+            <div class="exp-header">
+              <div>
+                <p class="exp-role" id="exp2-role">Executive Operations</p>
+                <p class="exp-company">Crescat Finserv LLP — Mumbai</p>
+              </div>
+              <span class="exp-period">Dec 2024 – May 2025</span>
+            </div>
+            <p class="exp-summary">
+              Automated mutual fund NAV/AUM tracking across 100+ daily records, reducing the error
+              rate from 12% to 1%. Engineered a master dashboard consolidating 6 independent Google
+              Sheets into a single real-time view. Built a mail merge automation delivering 100+
+              personalised emails monthly at a 98% delivery rate.
+            </p>
+            <ul class="exp-highlights" aria-label="Key contributions">
+              <li>
+                <span class="exp-highlight-badge exp-highlight-badge--primary">Automation</span>
+                Automated NAV/AUM tracking for 100+ daily records using Apps Script and advanced
+                Sheets formulas — error rate reduced from 12% to 1%.
+              </li>
+              <li>
+                <span class="exp-highlight-badge exp-highlight-badge--primary">Dashboard</span>
+                Engineered master dashboard consolidating 6 sheets with QUERY functions — real-time
+                visibility across 99+ data points for the operations team.
+              </li>
+              <li>
+                <span class="exp-highlight-badge">Mail Automation</span>
+                Created mail merge tool delivering 100+ personalised emails monthly with attachment
+                handling at 98% delivery rate.
+              </li>
+            </ul>
+            <div class="exp-stack">
+              <span class="stack-badge">Google Apps Script</span>
+              <span class="stack-badge">Google Sheets</span>
+              <span class="stack-badge">QUERY Functions</span>
+              <span class="stack-badge">Gmail API</span>
+              <span class="stack-badge">Mail Merge</span>
+            </div>
+          </li>
+
+          <!-- Commtex -->
+          <li class="exp-card reveal" aria-labelledby="exp3-role">
+            <div class="exp-header">
+              <div>
+                <p class="exp-role" id="exp3-role">Software Developer</p>
+                <p class="exp-company">Commtex Solutions Pvt. Ltd. — Mumbai</p>
+              </div>
+              <span class="exp-period">Mar 2022 – Aug 2024</span>
+            </div>
+            <p class="exp-summary">
+              Built 8+ responsive web applications with full CRUD functionality and RESTful API
+              integrations. Developed a crowdfunding platform with live API feeds and Razorpay
+              payment gateway handling 1000+ monthly visitors. Delivered consistent performance
+              optimisation across client projects.
+            </p>
+            <ul class="exp-highlights" aria-label="Key contributions">
+              <li>
+                <span class="exp-highlight-badge">Web Apps</span>
+                Developed 8+ responsive web applications using HTML5, CSS3, and JavaScript with
+                full CRUD and RESTful API integrations.
+              </li>
+              <li>
+                <span class="exp-highlight-badge">Crowdfunding Platform</span>
+                Built crowdfunding platform with live API feeds, Razorpay payment gateway integration,
+                and optimised workflows sustaining 1000+ monthly visitors.
+              </li>
+              <li>
+                <span class="exp-highlight-badge">Performance</span>
+                Optimised NGO website achieving 40% faster load times through asset delivery
+                improvements and UI/UX refactoring.
+              </li>
+            </ul>
+            <div class="exp-stack">
+              <span class="stack-badge">JavaScript</span>
+              <span class="stack-badge">HTML5</span>
+              <span class="stack-badge">CSS3</span>
+              <span class="stack-badge">REST API</span>
+              <span class="stack-badge">Razorpay</span>
+              <span class="stack-badge">WordPress</span>
+              <span class="stack-badge">Wix Velo</span>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
         <header class="section-header reveal">
           <p class="section-eyebrow">Skills</p>
           <h2 class="section-title" id="skills-heading">Technical Proficiency</h2>
@@ -242,347 +342,280 @@
 
         <div class="skills-grid">
 
-          <!-- Frontend -->
+          <!-- Primary Expertise -->
+          <div class="skill-card skill-card--featured reveal">
+            <div class="skill-card-head">
+              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+              <h3 class="skill-card-title">Primary Expertise</h3>
+              <span class="skill-featured-badge">Core</span>
+            </div>
+            <ul class="skill-list" aria-label="Primary expertise skills">
+              <li class="skill-row">
+                <span class="skill-name">Google Apps Script</span>
+                <span class="skill-pct">92%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Google Apps Script — 92%">
+                  <div class="skill-fill skill-fill--featured" data-width="92"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Automation (n8n, Webhooks)</span>
+                <span class="skill-pct">87%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="Automation — 87%">
+                  <div class="skill-fill skill-fill--featured" data-width="87"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">REST APIs</span>
+                <span class="skill-pct">88%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="REST APIs — 88%">
+                  <div class="skill-fill skill-fill--featured" data-width="88"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Trigger-Driven Architecture</span>
+                <span class="skill-pct">90%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Trigger Architecture — 90%">
+                  <div class="skill-fill skill-fill--featured" data-width="90"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Frontend Engineering -->
           <div class="skill-card reveal">
             <div class="skill-card-head">
               <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                 <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
               </svg>
-              <h3 class="skill-card-title">Frontend Development</h3>
+              <h3 class="skill-card-title">Frontend Engineering</h3>
             </div>
-            <ul class="skill-list" aria-label="Frontend skills">
+            <ul class="skill-list" aria-label="Frontend engineering skills">
               <li class="skill-row">
-                <span class="skill-name">HTML5 &amp; Semantic Markup</span>
+                <span class="skill-name">JavaScript (ES6+)</span>
+                <span class="skill-pct">83%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript — 83%">
+                  <div class="skill-fill" data-width="83"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">HTML5</span>
                 <span class="skill-pct">95%</span>
                 <div class="skill-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="HTML5 — 95%">
                   <div class="skill-fill" data-width="95"></div>
                 </div>
               </li>
               <li class="skill-row">
-                <span class="skill-name">CSS3, Flexbox &amp; Grid</span>
-                <span class="skill-pct">88%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 — 88%">
-                  <div class="skill-fill" data-width="88"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">JavaScript ES6+</span>
-                <span class="skill-pct">82%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript — 82%">
-                  <div class="skill-fill" data-width="82"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">Responsive / Mobile-first Design</span>
+                <span class="skill-name">CSS3</span>
                 <span class="skill-pct">90%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive — 90%">
-                  <div class="skill-fill" data-width="90"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- APIs -->
-          <div class="skill-card reveal">
-            <div class="skill-card-head">
-              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
-              </svg>
-              <h3 class="skill-card-title">API &amp; Backend Integration</h3>
-            </div>
-            <ul class="skill-list" aria-label="API integration skills">
-              <li class="skill-row">
-                <span class="skill-name">REST API Integration</span>
-                <span class="skill-pct">85%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="REST APIs — 85%">
-                  <div class="skill-fill" data-width="85"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">Fetch API / Async–Await</span>
-                <span class="skill-pct">83%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Fetch API — 83%">
-                  <div class="skill-fill" data-width="83"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">CRUD &amp; JSON Handling</span>
-                <span class="skill-pct">87%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" aria-label="JSON — 87%">
-                  <div class="skill-fill" data-width="87"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">Razorpay / Payment APIs</span>
-                <span class="skill-pct">78%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="Razorpay — 78%">
-                  <div class="skill-fill" data-width="78"></div>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Automation -->
-          <div class="skill-card reveal">
-            <div class="skill-card-head">
-              <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-                <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
-              </svg>
-              <h3 class="skill-card-title">Automation &amp; Tooling</h3>
-            </div>
-            <ul class="skill-list" aria-label="Automation skills">
-              <li class="skill-row">
-                <span class="skill-name">Google Apps Script</span>
-                <span class="skill-pct">88%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Apps Script — 88%">
-                  <div class="skill-fill" data-width="88"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">Google Sheets Integration</span>
-                <span class="skill-pct">90%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Sheets — 90%">
+                <div class="skill-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="CSS3 — 90%">
                   <div class="skill-fill" data-width="90"></div>
                 </div>
               </li>
               <li class="skill-row">
-                <span class="skill-name">Email / Report Automation</span>
-                <span class="skill-pct">82%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Email Automation — 82%">
-                  <div class="skill-fill" data-width="82"></div>
-                </div>
-              </li>
-              <li class="skill-row">
-                <span class="skill-name">Excel Automation</span>
-                <span class="skill-pct">74%</span>
-                <div class="skill-track" role="progressbar" aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" aria-label="Excel — 74%">
-                  <div class="skill-fill" data-width="74"></div>
+                <span class="skill-name">Responsive Design</span>
+                <span class="skill-pct">91%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" aria-label="Responsive Design — 91%">
+                  <div class="skill-fill" data-width="91"></div>
                 </div>
               </li>
             </ul>
           </div>
 
-          <!-- Platforms -->
+          <!-- Tools & Infrastructure -->
           <div class="skill-card reveal">
             <div class="skill-card-head">
               <svg class="skill-card-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
                 <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
               </svg>
-              <h3 class="skill-card-title">Platforms &amp; Tools</h3>
+              <h3 class="skill-card-title">Tools &amp; Infrastructure</h3>
             </div>
-            <div class="tools-grid" aria-label="Tools and platforms">
-              <span class="tool-chip">Wix Velo</span>
-              <span class="tool-chip">WordPress</span>
-              <span class="tool-chip">AWS EC2</span>
-              <span class="tool-chip">Git / GitHub</span>
-              <span class="tool-chip">VS Code</span>
-              <span class="tool-chip">Razorpay</span>
-              <span class="tool-chip">Postman</span>
-              <span class="tool-chip">Figma (reading)</span>
-              <span class="tool-chip">LocalStorage API</span>
-              <span class="tool-chip">DOM APIs</span>
-            </div>
+            <ul class="skill-list" aria-label="Tools and infrastructure skills">
+              <li class="skill-row">
+                <span class="skill-name">AWS EC2</span>
+                <span class="skill-pct">72%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100" aria-label="AWS EC2 — 72%">
+                  <div class="skill-fill" data-width="72"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">Git</span>
+                <span class="skill-pct">83%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100" aria-label="Git — 83%">
+                  <div class="skill-fill" data-width="83"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">SQL</span>
+                <span class="skill-pct">76%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="SQL — 76%">
+                  <div class="skill-fill" data-width="76"></div>
+                </div>
+              </li>
+              <li class="skill-row">
+                <span class="skill-name">AppSheet &amp; Google Workspace</span>
+                <span class="skill-pct">85%</span>
+                <div class="skill-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="AppSheet — 85%">
+                  <div class="skill-fill" data-width="85"></div>
+                </div>
+              </li>
+            </ul>
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ─────────────────────────────────────────────
-         PROJECTS
-    ───────────────────────────────────────────── -->
-    <section class="section section--alt" id="projects" aria-labelledby="projects-heading">
+    <!-- ── PROJECTS ── -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
       <div class="container">
-
         <header class="section-header reveal">
           <p class="section-eyebrow">Projects</p>
           <h2 class="section-title" id="projects-heading">Selected Work</h2>
-          <p class="section-sub">Production-grade projects covering e-commerce, automation, API integration, and tooling.</p>
+          <p class="section-sub">Hands-on builds demonstrating automation architecture, API integration, and frontend engineering.</p>
         </header>
 
         <div class="projects-grid">
 
-          <!-- Project 1 — E-Commerce CMS -->
           <article class="project-card reveal" aria-labelledby="proj1-title">
             <div class="project-card-body">
               <div class="project-meta">
                 <span class="project-index">01</span>
-                <span class="project-category">E-Commerce</span>
+                <span class="project-category">Automation</span>
               </div>
-
-              <h3 class="project-title" id="proj1-title">E-Commerce CMS Platform</h3>
+              <h3 class="project-title" id="proj1-title">Creative Point Ticketing Automation</h3>
               <p class="project-desc">
-                Full-featured online store built on Wix Velo with dynamic product listings pulled from a
-                headless CMS, a custom cart implementation, and a live Razorpay checkout flow.
+                Production API integration connecting the Creative Point ticketing system with Google
+                Sheets. Automated 100+ daily ticket requests end-to-end with real-time Gmail API
+                notifications — zero manual handoff required.
               </p>
-
               <div class="project-impact">
-                <span class="impact-tag">40% faster LCP</span>
-                <span class="impact-tag">Razorpay live checkout</span>
-                <span class="impact-tag">Mobile-first</span>
+                <span class="impact-tag">100+ tickets/day</span>
+                <span class="impact-tag">Zero manual steps</span>
+                <span class="impact-tag">Real-time alerts</span>
               </div>
-
               <ul class="project-highlights" aria-label="Key features">
-                <li>Dynamic product catalogue synced from CMS data layer</li>
-                <li>Custom JavaScript cart with quantity &amp; discount logic</li>
-                <li>Razorpay payment gateway — sandbox to production</li>
-                <li>SEO-optimised markup with structured data</li>
+                <li>REST API integration with Creative Point ticketing platform</li>
+                <li>Automated data sync to Google Sheets via Apps Script</li>
+                <li>Real-time Gmail API notifications to 10+ stakeholders</li>
+                <li>Trigger-based execution with no scheduled polling</li>
               </ul>
-
               <div class="project-stack" aria-label="Technology stack">
-                <span class="stack-badge">Wix Velo</span>
-                <span class="stack-badge">JavaScript</span>
-                <span class="stack-badge">CSS3</span>
-                <span class="stack-badge">Razorpay API</span>
+                <span class="stack-badge">Google Apps Script</span>
                 <span class="stack-badge">REST API</span>
+                <span class="stack-badge">Gmail API</span>
+                <span class="stack-badge">Google Sheets</span>
               </div>
             </div>
-
-            <!-- Hover overlay with links -->
             <div class="project-overlay" aria-hidden="true">
-              <a href="#" class="overlay-btn overlay-btn--primary"
-                 onclick="return false;" aria-label="View live demo of E-Commerce CMS Platform">
-                Live Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="#" class="overlay-btn overlay-btn--secondary"
-                 onclick="return false;" aria-label="View source code of E-Commerce CMS Platform">
-                View Code
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <a href="#contact" class="overlay-btn overlay-btn--primary" aria-label="Discuss this project">
+                Discuss Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 2 — Automation Dashboard -->
           <article class="project-card reveal" aria-labelledby="proj2-title">
             <div class="project-card-body">
               <div class="project-meta">
                 <span class="project-index">02</span>
-                <span class="project-category">Automation</span>
+                <span class="project-category">Dashboard</span>
               </div>
-
-              <h3 class="project-title" id="proj2-title">Reporting Automation Dashboard</h3>
+              <h3 class="project-title" id="proj2-title">Mutual Fund MIS Master Dashboard</h3>
               <p class="project-desc">
-                Internal dashboard that aggregates live Google Sheets data, generates visual
-                reports on schedule, and dispatches formatted emails with PDF attachments —
-                replacing a manual 5-hour weekly process.
+                Consolidated 6 independent Google Sheets into one real-time master dashboard using
+                optimised QUERY functions. Automated NAV/AUM tracking for 100+ daily records,
+                cutting the error rate from 12% to 1%.
               </p>
-
               <div class="project-impact">
-                <span class="impact-tag">60 hrs / mo saved</span>
-                <span class="impact-tag">Zero manual steps</span>
-                <span class="impact-tag">12-person team</span>
+                <span class="impact-tag">6 sheets → 1 view</span>
+                <span class="impact-tag">12% → 1% error rate</span>
+                <span class="impact-tag">99+ data points</span>
               </div>
-
               <ul class="project-highlights" aria-label="Key features">
-                <li>Real-time Sheets data aggregation via Apps Script API</li>
-                <li>Automated weekly email dispatch with attachment</li>
-                <li>Dynamic chart rendering from JSON data</li>
-                <li>Role-based filter controls for department views</li>
+                <li>Master dashboard consolidating 6 sheets via QUERY functions</li>
+                <li>Automated NAV/AUM tracking with advanced formula pipelines</li>
+                <li>Mail merge delivering 100+ personalised emails monthly</li>
+                <li>Real-time executive reporting with zero manual intervention</li>
               </ul>
-
               <div class="project-stack" aria-label="Technology stack">
                 <span class="stack-badge">Google Apps Script</span>
-                <span class="stack-badge">Sheets API</span>
-                <span class="stack-badge">JavaScript</span>
-                <span class="stack-badge">HTML5</span>
-                <span class="stack-badge">CSS3</span>
+                <span class="stack-badge">Google Sheets</span>
+                <span class="stack-badge">QUERY Functions</span>
+                <span class="stack-badge">Gmail API</span>
               </div>
             </div>
-
             <div class="project-overlay" aria-hidden="true">
-              <a href="#" class="overlay-btn overlay-btn--primary"
-                 onclick="return false;" aria-label="View live demo of Automation Dashboard">
-                Live Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="#" class="overlay-btn overlay-btn--secondary"
-                 onclick="return false;" aria-label="View source code of Automation Dashboard">
-                View Code
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <a href="#contact" class="overlay-btn overlay-btn--primary" aria-label="Discuss this project">
+                Discuss Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 3 — API Web App -->
           <article class="project-card reveal" aria-labelledby="proj3-title">
             <div class="project-card-body">
               <div class="project-meta">
                 <span class="project-index">03</span>
-                <span class="project-category">API Integration</span>
+                <span class="project-category">Web App</span>
               </div>
-
-              <h3 class="project-title" id="proj3-title">API-Driven Web Application</h3>
+              <h3 class="project-title" id="proj3-title">Crowdfunding Platform</h3>
               <p class="project-desc">
-                Single-page application that consumes multiple REST endpoints using the
-                Fetch API with async error handling, skeleton loading states, and dynamic
-                DOM rendering — zero framework dependencies.
+                Full-featured crowdfunding platform with live API feeds, Razorpay payment gateway
+                integration, and optimised workflows sustaining 1000+ monthly visitors. One of 8+
+                responsive web apps delivered at Commtex Solutions.
               </p>
-
               <div class="project-impact">
-                <span class="impact-tag">0 dependencies</span>
-                <span class="impact-tag">Sub-1s TTFB</span>
-                <span class="impact-tag">Full error handling</span>
+                <span class="impact-tag">1000+ visitors/mo</span>
+                <span class="impact-tag">Live payment gateway</span>
+                <span class="impact-tag">40% faster load</span>
               </div>
-
               <ul class="project-highlights" aria-label="Key features">
-                <li>Fetch API with async/await &amp; graceful error boundaries</li>
-                <li>Skeleton loaders for perceived performance</li>
-                <li>Client-side search and filter with debounce</li>
-                <li>LocalStorage caching to reduce redundant requests</li>
+                <li>Live API feeds with real-time campaign data rendering</li>
+                <li>Razorpay payment gateway — sandbox to production</li>
+                <li>Full CRUD campaign management with admin controls</li>
+                <li>40% load-time improvement via asset optimisation</li>
               </ul>
-
               <div class="project-stack" aria-label="Technology stack">
-                <span class="stack-badge">Vanilla JS</span>
-                <span class="stack-badge">Fetch API</span>
-                <span class="stack-badge">REST API</span>
+                <span class="stack-badge">JavaScript</span>
                 <span class="stack-badge">HTML5</span>
                 <span class="stack-badge">CSS3</span>
+                <span class="stack-badge">REST API</span>
+                <span class="stack-badge">Razorpay</span>
               </div>
             </div>
-
             <div class="project-overlay" aria-hidden="true">
-              <a href="#" class="overlay-btn overlay-btn--primary"
-                 onclick="return false;" aria-label="View live demo of API Web App">
-                Live Demo
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-              </a>
-              <a href="#" class="overlay-btn overlay-btn--secondary"
-                 onclick="return false;" aria-label="View source code of API Web App">
-                View Code
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <a href="#contact" class="overlay-btn overlay-btn--primary" aria-label="Discuss this project">
+                Discuss Project
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 4 — Interview Tracker -->
           <article class="project-card project-card--featured reveal" aria-labelledby="proj4-title">
             <div class="project-card-body">
               <div class="project-meta">
                 <span class="project-index">04</span>
-                <span class="project-category">Productivity Tool</span>
+                <span class="project-category">Live Demo</span>
               </div>
-
-              <h3 class="project-title" id="proj4-title">Interview Tracker — Live Demo Below</h3>
+              <h3 class="project-title" id="proj4-title">Interview Tracker — Try it Below</h3>
               <p class="project-desc">
-                A client-side application for tracking job applications across companies and
-                statuses. Data is persisted via the browser's LocalStorage API — no server required.
-                The live implementation is embedded in the next section.
+                A client-side job application tracker demonstrating CRUD logic, LocalStorage
+                persistence, accessible form validation, and filter UI — vanilla JavaScript,
+                zero dependencies.
               </p>
-
               <div class="project-impact">
                 <span class="impact-tag">Zero backend</span>
                 <span class="impact-tag">LocalStorage CRUD</span>
-                <span class="impact-tag">Fully interactive</span>
+                <span class="impact-tag">Fully accessible</span>
               </div>
-
               <ul class="project-highlights" aria-label="Key features">
-                <li>Add, filter, and delete application entries</li>
-                <li>Status tracking: Applied, Interviewed, Rejected, Accepted</li>
+                <li>Add, filter, and delete entries with status tracking</li>
                 <li>Persistent storage via LocalStorage API</li>
-                <li>Keyboard-accessible &amp; screen-reader friendly</li>
+                <li>Keyboard-accessible and screen-reader friendly</li>
+                <li>Live filter tabs with animated entry transitions</li>
               </ul>
-
               <div class="project-stack" aria-label="Technology stack">
                 <span class="stack-badge">Vanilla JS</span>
                 <span class="stack-badge">LocalStorage</span>
@@ -590,10 +623,8 @@
                 <span class="stack-badge">CSS3</span>
               </div>
             </div>
-
             <div class="project-overlay" aria-hidden="true">
-              <a href="#tracker" class="overlay-btn overlay-btn--primary"
-                 aria-label="Try the live Interview Tracker demo">
+              <a href="#tracker" class="overlay-btn overlay-btn--primary" aria-label="Try the live Interview Tracker demo">
                 Try Live Demo
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -604,57 +635,40 @@
       </div>
     </section>
 
-    <!-- ─────────────────────────────────────────────
-         INTERVIEW TRACKER (LIVE DEMO)
-    ───────────────────────────────────────────── -->
-    <section class="section" id="tracker" aria-labelledby="tracker-heading">
+    <!-- ── TRACKER ── -->
+    <section class="section section--alt" id="tracker" aria-labelledby="tracker-heading">
       <div class="container">
-
         <header class="section-header reveal">
           <p class="section-eyebrow">Live Demo</p>
           <h2 class="section-title" id="tracker-heading">Interview Tracker</h2>
-          <p class="section-sub">
-            Add your job applications below. Data is stored locally in your browser — nothing is sent to any server.
-          </p>
+          <p class="section-sub">Add your job applications below. Data is stored locally in your browser — nothing is sent to any server.</p>
         </header>
 
         <div class="tracker-layout">
-
-          <!-- Add form -->
           <div class="tracker-form-panel reveal">
             <h3 class="panel-title">New Application</h3>
-
             <form id="trackerForm" class="tracker-form" novalidate autocomplete="off" aria-label="Add a new job application">
 
               <div class="form-field">
                 <label class="form-label" for="tCompany">
                   Company Name <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input
-                  class="form-input"
-                  type="text"
-                  id="tCompany"
-                  name="company"
+                <input class="form-input" type="text" id="tCompany" name="company"
                   placeholder="e.g. Infosys, Razorpay"
-                  aria-required="true"
-                  aria-describedby="tCompany-err"
-                />
+                  aria-required="true" aria-describedby="tCompany-err" />
                 <span class="form-error" id="tCompany-err" role="alert" aria-live="polite"></span>
               </div>
 
               <div class="form-field">
                 <label class="form-label" for="tRole">Job Role</label>
-                <input
-                  class="form-input"
-                  type="text"
-                  id="tRole"
-                  name="role"
-                  placeholder="e.g. Frontend Developer"
-                />
+                <input class="form-input" type="text" id="tRole" name="role"
+                  placeholder="e.g. Automation Developer" />
               </div>
 
               <div class="form-field">
-                <label class="form-label" for="tStatus">Status <span class="required" aria-hidden="true">*</span></label>
+                <label class="form-label" for="tStatus">
+                  Status <span class="required" aria-hidden="true">*</span>
+                </label>
                 <div class="select-wrap">
                   <select class="form-select" id="tStatus" name="status" aria-required="true">
                     <option value="Applied">Applied</option>
@@ -678,27 +692,19 @@
             </form>
           </div>
 
-          <!-- Results panel -->
           <div class="tracker-results-panel reveal">
-
-            <!-- Filter bar -->
             <div class="tracker-filter-bar" role="tablist" aria-label="Filter applications by status">
-              <button class="filter-tab active" data-filter="All"        role="tab" aria-selected="true"  aria-controls="trackerList">All</button>
-              <button class="filter-tab"        data-filter="Applied"    role="tab" aria-selected="false" aria-controls="trackerList">Applied</button>
-              <button class="filter-tab"        data-filter="Interviewed"role="tab" aria-selected="false" aria-controls="trackerList">Interviewed</button>
-              <button class="filter-tab"        data-filter="Rejected"   role="tab" aria-selected="false" aria-controls="trackerList">Rejected</button>
-              <button class="filter-tab"        data-filter="Accepted"   role="tab" aria-selected="false" aria-controls="trackerList">Accepted</button>
+              <button class="filter-tab active" data-filter="All"         role="tab" aria-selected="true"  aria-controls="trackerList">All</button>
+              <button class="filter-tab"        data-filter="Applied"     role="tab" aria-selected="false" aria-controls="trackerList">Applied</button>
+              <button class="filter-tab"        data-filter="Interviewed" role="tab" aria-selected="false" aria-controls="trackerList">Interviewed</button>
+              <button class="filter-tab"        data-filter="Rejected"    role="tab" aria-selected="false" aria-controls="trackerList">Rejected</button>
+              <button class="filter-tab"        data-filter="Accepted"    role="tab" aria-selected="false" aria-controls="trackerList">Accepted</button>
             </div>
 
-            <!-- Summary counts -->
             <div class="tracker-summary" id="trackerSummary" aria-live="polite" aria-label="Application summary"></div>
 
-            <!-- List -->
-            <div class="tracker-list" id="trackerList" role="list" aria-label="Job applications" aria-live="polite">
-              <!-- Populated by JS -->
-            </div>
+            <div class="tracker-list" id="trackerList" role="list" aria-label="Job applications" aria-live="polite"></div>
 
-            <!-- Empty state -->
             <div class="tracker-empty" id="trackerEmpty">
               <svg class="empty-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
                 <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
@@ -707,38 +713,31 @@
               <p class="empty-title">No applications yet</p>
               <p class="empty-sub">Use the form to track your first job application.</p>
             </div>
-
           </div>
-
         </div>
       </div>
     </section>
 
-    <!-- ─────────────────────────────────────────────
-         CONTACT
-    ───────────────────────────────────────────── -->
-    <section class="section section--alt" id="contact" aria-labelledby="contact-heading">
+    <!-- ── CONTACT ── -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-
         <header class="section-header reveal">
           <p class="section-eyebrow">Contact</p>
           <h2 class="section-title" id="contact-heading">Let's work together.</h2>
-          <p class="section-sub">Open to full-time roles, contract work, and consulting. Response time within 24 hours.</p>
+          <p class="section-sub">Open to full-time roles, contract work, and consulting. Response within 24 hours.</p>
         </header>
 
         <div class="contact-layout">
-
-          <!-- Info column -->
           <div class="contact-info reveal">
             <p class="contact-intro">
-              I'm actively exploring new opportunities. Whether you have a specific role,
-              a project in mind, or just want to discuss ideas — I'd be happy to talk.
+              I'm actively exploring new opportunities. Whether you have a specific role, a project,
+              or just want to discuss ideas — I'd be happy to connect.
             </p>
 
             <nav class="contact-links" aria-label="Contact channels">
-              <a href="mailto:prachi07gaikwad@gmail.com" class="contact-link">
+              <a href="mailto:Prachi07gaikwad@gmail.com" class="contact-link">
                 <span class="contact-link-label">Email</span>
-                <span class="contact-link-val">prachi.gaikwad@gmail.com</span>
+                <span class="contact-link-val">Prachi07gaikwad@gmail.com</span>
                 <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
               <a href="https://linkedin.com/in/prachi-gaikwad-795a56228" target="_blank" rel="noopener noreferrer" class="contact-link">
@@ -748,7 +747,7 @@
               </a>
               <a href="https://github.com/nilprachi07" target="_blank" rel="noopener noreferrer" class="contact-link">
                 <span class="contact-link-label">GitHub</span>
-                <span class="contact-link-val">github.com/prachigaikwad</span>
+                <span class="contact-link-val">github.com/nilprachi07</span>
                 <svg class="contact-link-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
             </nav>
@@ -763,7 +762,6 @@
             </a>
           </div>
 
-          <!-- Contact form -->
           <form class="contact-form reveal" id="contactForm" novalidate aria-label="Send Prachi a message">
 
             <div class="form-row">
@@ -771,16 +769,9 @@
                 <label class="form-label" for="cfName">
                   Full Name <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input
-                  class="form-input"
-                  type="text"
-                  id="cfName"
-                  name="name"
-                  placeholder="Your full name"
-                  autocomplete="name"
-                  aria-required="true"
-                  aria-describedby="cfName-err"
-                />
+                <input class="form-input" type="text" id="cfName" name="name"
+                  placeholder="Your full name" autocomplete="name"
+                  aria-required="true" aria-describedby="cfName-err" />
                 <span class="form-error" id="cfName-err" role="alert" aria-live="polite"></span>
               </div>
 
@@ -788,16 +779,9 @@
                 <label class="form-label" for="cfEmail">
                   Email Address <span class="required" aria-hidden="true">*</span>
                 </label>
-                <input
-                  class="form-input"
-                  type="email"
-                  id="cfEmail"
-                  name="email"
-                  placeholder="you@company.com"
-                  autocomplete="email"
-                  aria-required="true"
-                  aria-describedby="cfEmail-err"
-                />
+                <input class="form-input" type="email" id="cfEmail" name="email"
+                  placeholder="you@company.com" autocomplete="email"
+                  aria-required="true" aria-describedby="cfEmail-err" />
                 <span class="form-error" id="cfEmail-err" role="alert" aria-live="polite"></span>
               </div>
             </div>
@@ -806,15 +790,9 @@
               <label class="form-label" for="cfSubject">
                 Subject <span class="required" aria-hidden="true">*</span>
               </label>
-              <input
-                class="form-input"
-                type="text"
-                id="cfSubject"
-                name="subject"
-                placeholder="e.g. Frontend role at Acme Corp"
-                aria-required="true"
-                aria-describedby="cfSubject-err"
-              />
+              <input class="form-input" type="text" id="cfSubject" name="subject"
+                placeholder="e.g. Automation role at Acme Corp"
+                aria-required="true" aria-describedby="cfSubject-err" />
               <span class="form-error" id="cfSubject-err" role="alert" aria-live="polite"></span>
             </div>
 
@@ -822,15 +800,9 @@
               <label class="form-label" for="cfMessage">
                 Message <span class="required" aria-hidden="true">*</span>
               </label>
-              <textarea
-                class="form-input form-textarea"
-                id="cfMessage"
-                name="message"
-                rows="5"
+              <textarea class="form-input form-textarea" id="cfMessage" name="message" rows="5"
                 placeholder="Tell me about the role or project…"
-                aria-required="true"
-                aria-describedby="cfMessage-err"
-              ></textarea>
+                aria-required="true" aria-describedby="cfMessage-err"></textarea>
               <span class="form-error" id="cfMessage-err" role="alert" aria-live="polite"></span>
             </div>
 
@@ -846,16 +818,12 @@
             </div>
 
           </form>
-
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ─────────────────────────────────────────────
-       FOOTER
-  ───────────────────────────────────────────── -->
   <footer class="site-footer" role="contentinfo">
     <div class="container">
       <div class="footer-inner">
@@ -863,21 +831,20 @@
           <span class="footer-initials">PG</span>
           <div class="footer-brand-text">
             <p class="footer-name">Prachi Gaikwad</p>
-            <p class="footer-title-text">Frontend Developer — India</p>
+            <p class="footer-title-text">Automation Developer &amp; Frontend Engineer — Mumbai</p>
           </div>
         </div>
 
         <nav class="footer-nav" aria-label="Footer navigation">
           <a href="#about">About</a>
+          <a href="#experience">Experience</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </nav>
 
         <div class="footer-right">
-          <p class="footer-copy">
-            &copy; <span id="footerYear"></span> Prachi Gaikwad
-          </p>
+          <p class="footer-copy">&copy; <span id="footerYear"></span> Prachi Gaikwad</p>
           <a href="#home" class="back-to-top" aria-label="Scroll back to top">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
               <path d="M12 19V5M5 12l7-7 7 7"/>
@@ -891,8 +858,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
